@@ -3,7 +3,12 @@ const route = express.Router();
 const homePage = require('./src/controllers/homeController');
 const contats = require('./src/controllers/contatsController')
 
-route.get('/',homePage.homePage);
+
+// rotas da home
+route.get('/',homePage.homePage, (req, ress)=>{
+    console.log()
+    console.log('ainda estou aqui');
+});
 route.post('/', homePage.firstPost)
 
 // pagina de contatos
