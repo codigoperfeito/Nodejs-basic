@@ -8,5 +8,6 @@ route.get('/',homePage.index);
 // pagina de login
 
 route.get('/login/index', loginPage.index);
+route.post('/login/register', loginPage.register);
 
 module.exports = route

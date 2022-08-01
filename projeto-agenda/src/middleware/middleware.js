@@ -1,4 +1,5 @@
 exports.middlewareGlobal = (req,res,next) => {
+    res.locals.errors  = req.flash('errors')
     next()
 }
 exports.middlewareCsrfConfig = (err ,req,res,next)=>{
